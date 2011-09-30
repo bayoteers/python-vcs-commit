@@ -1,0 +1,30 @@
+
+usage: pmo-commit [options]
+
+options:
+  -h, --help            show this help message and exit
+  -tTRAC, --trac=TRAC   Path to the Trac project
+  -UURL, --url=URL      URL to use in changeset references
+  -rREV, --revision=REV
+                        Repository revision number
+  -uUSER, --user=USER   The user who is responsible for this action
+  -mMSG, --msg=MSG      The log message to search
+  -cENCODING, --encoding=ENCODING
+                        The encoding used by the log message
+  -bBUGZILLA, --bugzilla=BUGZILLA
+                        Bugzilla base URL
+  -PPROXY, --proxy=PROXY
+                        Proxy server address
+ ----
+ you need to include something like into your post-commit hook:
+
+ REPOS="$1"
+ REV="$2"
+ LOG=`/usr/bin/svnlook log -r $REV $REPOS`
+ AUTHOR=`/usr/bin/svnlook author -r $REV $REPOS`
+
+ /usr/bin/python /path/to/pmo-commit \
+  -U "<URL/TO/TRAC>"  \
+  -r "$REV"       \
+  -u "$AUTHOR"    \
+  -m "$LOG"

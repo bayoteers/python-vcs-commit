@@ -1,0 +1,120 @@
+python-vcs-commit (0.6.2) unstable; urgency=low
+
+  * Bugfixing
+  * Correct python-minideblib dependency
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Wed, 28 Sep 2011 13:46:01 +0300
+
+python-vcs-commit (0.6.1) unstable; urgency=low
+
+  * Forcing old pkg removal 
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Wed, 14 Sep 2011 15:09:59 +0300
+
+python-vcs-commit (0.6) unstable; urgency=low
+
+  * Using bugzilla REST api now
+  * Renaming package to python-vcs-commit to have more general meaning and 
+    compliance with python standards
+  * updating packaging
+  * giving it an object oriented structure
+  * slightly improving options handling
+  * start to have a config file
+  * Fixes: NB#281560 - Automatic commit comments environment is expanded
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Mon, 12 Sep 2011 22:47:30 +0300
+
+python-vcs-commit (0.5.2) unstable; urgency=low
+
+  * Version bump due to package building mess.
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Tue, 12 Jul 2011 17:03:10 +0300
+
+python-vcs-commit (0.5.1) unstable; urgency=low
+
+  * Fixes: NB#201475 -  Writing only the part of the changelog
+    that is relevant for a given bug
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Sun, 07 Nov 2010 13:59:27 +0200
+
+python-vcs-commit (0.5) jaunty; urgency=low
+
+  *  Re-engineering the whole thing
+  *  Tag is not used anymore
+  *  Support for changelog introduced
+  *  Changelog is preferred to commit message and gets package name and
+     version
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Mon, 13 Sep 2010 14:10:00 +0300
+
+python-vcs-commit (0.4.7) jaunty; urgency=low
+
+  *  import os was missing
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Wed, 28 Jul 2010 10:03:31 +0300
+
+python-vcs-commit (0.4.6) unstable; urgency=low
+
+  * Removing revision, adding tag information
+
+ -- Saranszky Csaba <ext-csaba.saranszky@nokia.com>  Tue, 22 Jun 2010 11:36:30 +0300
+
+python-vcs-commit (0.4.5) unstable; urgency=low
+
+  * Adding HG capability
+
+ -- Saranszky Csaba <ext-csaba.saranszky@nokia.com>  Wed, 16 Jun 2010 11:16:14 +0300
+
+python-vcs-commit (0.4.4) unstable; urgency=low
+
+  * Supporting also multiple bugfixes in the same changelog now
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Wed, 02 Jun 2010 17:15:35 +0300
+
+python-vcs-commit (0.4.3.1) unstable; urgency=low
+
+  * Minor linguisting change
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Thu, 29 Apr 2010 17:18:44 +0300
+
+python-vcs-commit (0.4.3) jaunty; urgency=low
+
+  * Adding WAITING and NEED_INFO to the possible bug_statuses to be resolved
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Tue, 27 Apr 2010 15:55:33 +0300
+
+python-vcs-commit (0.4.2) unstable; urgency=low
+
+  * Adapting code to new bugzilla 3.4.x
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Fri, 15 Jan 2010 11:53:08 +0200
+
+python-vcs-commit (0.4.1) unstable; urgency=low
+
+  * Bugfix 
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Fri, 11 Dec 2009 17:02:59 +0200
+
+python-vcs-commit (0.4) unstable; urgency=low
+
+  * Adding option to comment only 
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Fri, 11 Dec 2009 16:39:17 +0200
+
+python-vcs-commit (0.3) unstable; urgency=low
+
+  * Adding option to set the TM of a bug when closing it 
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Fri, 06 Nov 2009 12:50:30 +0200
+
+python-vcs-commit (0.2) unstable; urgency=low
+
+  * Proper dependencies in place
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Wed, 04 Nov 2009 13:45:25 +0200
+
+python-vcs-commit (0.1) unstable; urgency=low
+
+  * First debianization
+
+ -- Stefano Mosconi <stefano.mosconi@gmail.com>  Wed, 04 Nov 2009 09:38:31 +0200

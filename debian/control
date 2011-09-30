@@ -1,0 +1,15 @@
+Source: python-vcs-commit
+Section: python
+Priority: optional
+Maintainer: Stefano Mosconi <stefano.mosconi@gmail.com>
+Build-Depends-Indep: debhelper (>= 8.0.0), python (>=2.6.6-3~)
+Standards-Version: 3.9.1
+
+Package: python-vcs-commit
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-minideblib (<= 0.6.21.32), python-bugzilla-rest (>= 0.3) 
+Replaces: pmo-commit
+Conflicts: pmo-commit
+Description: Simple script that comments on bugzilla
+ Parses the changelog contained in a commit message (either SVN or GIT) 
+ and then comments on bugzilla the relevant bug
